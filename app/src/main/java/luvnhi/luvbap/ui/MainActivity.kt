@@ -23,10 +23,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     private var homeAdapter: HomeAdapter? = null
     private var listData: List<Any> = arrayListOf()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
 
     override fun getContentLayout(): Int {
         return R.layout.activity_main
@@ -47,8 +43,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     private fun setupAdapter() {
         homeAdapter = HomeAdapter()
         binding.rvHome.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        binding.rvHome.setHasFixedSize(true)
         binding.rvHome.adapter = homeAdapter
+        homeAdapter?.submitList(listData)
     }
 
     override fun onRequestPermissionsResult(

@@ -10,7 +10,10 @@
             app:layout_constraintStart_toStartOf="parent"
             android:textSize="@dimen/sp20"
             android:textColor="@color/black"
-            android:padding="@dimen/dp5"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:padding="@dimen/dp8"
             android:layout_marginStart="@dimen/dp10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

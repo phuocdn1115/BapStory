@@ -7,33 +7,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.MainActivity">
-
-<!--        <androidx.constraintlayout.widget.Guideline-->
-<!--            android:id="@+id/gl"-->
-<!--            android:orientation="horizontal"-->
-<!--            app:layout_constraintGuide_percent="0.67"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="@dimen/dp0"/>-->
-<!--        <View-->
-<!--            app:layout_constraintTop_toBottomOf="@id/gl"-->
-<!--            android:background="@drawable/bg_timeline"-->
-<!--            android:id="@+id/timeline"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="@dimen/dp8"/>-->
-<!--        <ImageView-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintBottom_toTopOf="@id/gl"-->
-<!--            android:src="@drawable/triangle"-->
-<!--            android:layout_width="150dp"-->
-<!--            android:layout_height="150dp"/>-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             android:overScrollMode="never"
-            android:layout_marginTop="@dimen/dp100"
+            android:layout_marginTop="@dimen/dp10"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

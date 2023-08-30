@@ -53,3 +53,6 @@ fun storagePermissionSDK33() = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.
 } else {
     storagePermission()
 }
+
+
+val IntArray.permissionGranted: Boolean get() = !any { it != PackageManager.PERMISSION_GRANTED }
